@@ -1,0 +1,4 @@
+com\pilaf\cs\users\rest\UserRestController.class
+com\pilaf\cs\users\model\User.class
+com\pilaf\cs\users\repository\UserRepository.class
+com\pilaf\cs\users\AccountsServer.class

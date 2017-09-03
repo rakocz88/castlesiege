@@ -1,0 +1,16 @@
+package com.pilaf.cs.users;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+
+@EnableAutoConfiguration
+@EnableDiscoveryClient
+public class AccountsServer {
+
+    public static void main(String[] args) {
+        // Will configure using accounts-server.yml
+//        System.setProperty("spring.config.name", "accounts-server");
+
+        SpringApplication.run(AccountsServer.class, args);
+    }
+}

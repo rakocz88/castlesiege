@@ -1,0 +1,20 @@
+server.port= 11001
+server.contextPath=/users
+
+spring.application.name= user-service
+
+spring.datasource.url = jdbc:postgresql://localhost:5432/csusers
+spring.datasource.username = postgres
+spring.datasource.password = haslo1
+
+
+spring.jpa.database=POSTGRESQL
+spring.datasource.platform=postgres
+spring.jpa.show-sql = true
+
+spring.jpa.hibernate.ddl-auto=update
+spring.database.driverClassName=org.postgresql.Driver
+
+# Configure this Discovery Server
+eureka.instance.hostname = "user-service"
+eureka.client.serviceUrl.defaultZone: http://localhost:11000/eureka/

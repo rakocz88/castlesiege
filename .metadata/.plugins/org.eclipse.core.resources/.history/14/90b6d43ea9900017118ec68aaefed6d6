@@ -1,0 +1,10 @@
+package com.pilaf.cs.cardcreator.service;
+
+public class ExternalUserServiceFallback implements ExternalUserService {
+
+	@Override
+	public String getAllUsers() {
+		return "does not work";
+	}
+
+}

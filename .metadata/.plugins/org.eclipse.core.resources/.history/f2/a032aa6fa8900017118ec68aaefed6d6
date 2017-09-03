@@ -1,0 +1,12 @@
+package com.pilaf.cs.cardcreator.service;
+
+import org.springframework.cloud.netflix.feign.FeignClient;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@FeignClient(value = "https://user-service")
+public interface ExternalUserService {
+
+	@RequestMapping("/all")
+	String getAllUsers();
+
+}

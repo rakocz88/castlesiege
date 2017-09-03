@@ -1,0 +1,5 @@
+package com.pilaf.cs.cardcreator.service;
+
+public class CustomerServiceFeignClientFallback {
+
+}

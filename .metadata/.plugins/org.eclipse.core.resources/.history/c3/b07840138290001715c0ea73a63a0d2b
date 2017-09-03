@@ -1,0 +1,15 @@
+@EnableAutoConfiguration
+@EnableDiscoveryClient
+@Import(AccountsWebApplication.class)
+public class AccountsServer {
+
+    @Autowired
+    AccountRepository accountRepository;
+
+    public static void main(String[] args) {
+        // Will configure using accounts-server.yml
+        System.setProperty("spring.config.name", "accounts-server");
+
+        SpringApplication.run(AccountsServer.class, args);
+    }
+}

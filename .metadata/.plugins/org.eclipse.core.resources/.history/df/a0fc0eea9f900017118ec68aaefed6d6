@@ -1,0 +1,28 @@
+# Spring properties
+spring:
+  application:
+     name: user-service
+
+# Discovery Server Access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:11000/eureka/
+
+# HTTP Server
+server:
+  port: 11001   # HTTP (Tomcat) port
+  
+spring:
+  datasource:
+    url : jdbc:postgresql://localhost:5432/csusers
+    username = postgres
+    password = haslo1
+
+
+spring.jpa.database=POSTGRESQL
+spring.datasource.platform=postgres
+spring.jpa.show-sql = true
+
+spring.jpa.hibernate.ddl-auto=update
+spring.database.driverClassName=org.postgresql.Driver

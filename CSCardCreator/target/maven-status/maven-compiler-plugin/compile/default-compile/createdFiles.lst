@@ -1,0 +1,4 @@
+com\pilaf\cs\cardcreator\rest\UsersRestService.class
+com\pilaf\cs\cardcreator\CardCreatorServer.class
+com\pilaf\cs\cardcreator\service\ExternalUserServiceFallback.class
+com\pilaf\cs\cardcreator\service\ExternalUserService.class

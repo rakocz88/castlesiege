@@ -1,0 +1,26 @@
+package com.pilaf.cs.cardcreator.rest;
+
+import java.util.HashMap;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+@RestController("/cardsCreator")
+public class UsersRestService {
+
+	private static final String URL = "http://user-service:11001/users/all";
+	
+	@Autowired
+	@LoadBalanced
+	RestTemplate restTemplate;
+
+	@RequestMapping(produces = "a")
+	public String getAllUsers() {
+		return restTemplate.getForObject(URL, String.class, new HashMap<String, String>());
+
+	}
+
+}
