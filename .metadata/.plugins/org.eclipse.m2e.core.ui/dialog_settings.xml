@@ -4,13 +4,14 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.pilaf.exampe"/>
 			<item value="com.pilaf.cs"/>
+			<item value="com.pilaf.exampe"/>
 			<item value="com.pilaf.castlesiege"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="CSApi"/>
 			<item value="SomeProject"/>
 			<item value="CSCardCreator"/>
 			<item value="CSUsers"/>

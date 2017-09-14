@@ -11,8 +11,6 @@ import com.pilaf.cs.cardcreator.service.ExternalUserService;
 @RestController()
 public class UsersRestService {
 
-	private static final String URL = "http://user-service/all";
-	
 	@Autowired
 	RestTemplate restTemplate;
 	

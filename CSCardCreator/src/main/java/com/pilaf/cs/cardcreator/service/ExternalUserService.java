@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Component
-@FeignClient(value = "http://user-service")
+@FeignClient(value = "http://users")
 public interface ExternalUserService {
 
 	@RequestMapping(method = RequestMethod.GET, value = "/all")

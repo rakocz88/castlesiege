@@ -4,6 +4,7 @@ Implementation-Version: 0.0.1-SNAPSHOT
 Built-By: filip
 Implementation-Vendor-Id: com.pilaf.castlesiege
 Build-Jdk: 1.8.0_73
+Implementation-URL: http://projects.spring.io/spring-boot/CSUsers/
 Created-By: Maven Integration for Eclipse
 Implementation-Vendor: Pivotal Software, Inc.
 

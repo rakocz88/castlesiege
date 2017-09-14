@@ -1,4 +1,8 @@
+C:\Users\filip\castleSiegeFront\CSUsers\src\main\java\com\pilaf\cs\users\config\WebSecurityConfig.java
 C:\Users\filip\castleSiegeFront\CSUsers\src\main\java\com\pilaf\cs\users\model\User.java
-C:\Users\filip\castleSiegeFront\CSUsers\src\main\java\com\pilaf\cs\users\AccountsServer.java
+C:\Users\filip\castleSiegeFront\CSUsers\src\main\java\com\pilaf\cs\users\UsersServer.java
+C:\Users\filip\castleSiegeFront\CSUsers\src\main\java\com\pilaf\cs\users\service\UserService.java
+C:\Users\filip\castleSiegeFront\CSUsers\src\main\java\com\pilaf\cs\users\initializer\DataInitializer.java
+C:\Users\filip\castleSiegeFront\CSUsers\src\main\java\com\pilaf\cs\users\config\OAuth2Config.java
 C:\Users\filip\castleSiegeFront\CSUsers\src\main\java\com\pilaf\cs\users\repository\UserRepository.java
 C:\Users\filip\castleSiegeFront\CSUsers\src\main\java\com\pilaf\cs\users\rest\UserRestController.java

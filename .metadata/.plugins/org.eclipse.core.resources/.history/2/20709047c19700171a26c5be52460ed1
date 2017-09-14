@@ -1,0 +1,5 @@
+package com.pilaf.cs.users;
+
+public class OauthConfiguration {
+
+}

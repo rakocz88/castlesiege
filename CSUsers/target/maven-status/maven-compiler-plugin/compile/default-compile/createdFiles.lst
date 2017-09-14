@@ -1,4 +1,8 @@
-com\pilaf\cs\users\rest\UserRestController.class
+com\pilaf\cs\users\initializer\DataInitializer.class
+com\pilaf\cs\users\service\UserService.class
 com\pilaf\cs\users\model\User.class
 com\pilaf\cs\users\repository\UserRepository.class
-com\pilaf\cs\users\AccountsServer.class
+com\pilaf\cs\users\config\OAuth2Config.class
+com\pilaf\cs\users\config\WebSecurityConfig.class
+com\pilaf\cs\users\rest\UserRestController.class
+com\pilaf\cs\users\UsersServer.class

@@ -1,8 +1,0 @@
-package com.pilaf.cs.cardcreator.service;
-
-import org.springframework.cloud.netflix.feign.FeignClient;
-
-@FeignClient("https://user-service")
-public class ExternalUserService {
-
-}
