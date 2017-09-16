@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunBDDTest" project="CsE2ETests" tests="5" started="5" failures="0" errors="2" ignored="3">
+  <testsuite name="com.pilaf.cs.tests.RunBDDTest" time="1.163">
+    <testsuite name="Feature: User module feature Feature" time="1.163">
+      <testsuite name="Scenario: I want to log in as a valid user and get a response code 200 from the login action" time="1.158" incomplete="true">
+        <error>feign.FeignException: status 401 reading UserFeignClient#getUserByName(String); content:
+{"error":"unauthorized","error_description":"Full authentication is required to access this resource"}&#13;
+	at feign.FeignException.errorStatus(FeignException.java:62)&#13;
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:91)&#13;
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:138)&#13;
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:76)&#13;
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:103)&#13;
+	at com.sun.proxy.$Proxy118.getUserByName(Unknown Source)&#13;
+	at com.pilaf.cs.tests.steps.UserModuleSteps.there_is_a_account_with_username_and_password_in_the_database(UserModuleSteps.java:37)&#13;
+	at ✽.And there is a account with username ="filip" and password = "filip" in the database(userModule.feature:5)&#13;
+&#13;
+</error>
+        <testcase name="Given I am a user that is not loged in" classname="Scenario: I want to log in as a valid user and get a response code 200 from the login action" time="1.155"/>
+        <testcase name="And there is a account with username =&quot;filip&quot; and password = &quot;filip&quot; in the database" classname="Scenario: I want to log in as a valid user and get a response code 200 from the login action" time="0.003">
+          <error>feign.FeignException: status 401 reading UserFeignClient#getUserByName(String); content:
+{"error":"unauthorized","error_description":"Full authentication is required to access this resource"}&#13;
+	at feign.FeignException.errorStatus(FeignException.java:62)&#13;
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:91)&#13;
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:138)&#13;
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:76)&#13;
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:103)&#13;
+	at com.sun.proxy.$Proxy118.getUserByName(Unknown Source)&#13;
+	at com.pilaf.cs.tests.steps.UserModuleSteps.there_is_a_account_with_username_and_password_in_the_database(UserModuleSteps.java:37)&#13;
+	at ✽.And there is a account with username ="filip" and password = "filip" in the database(userModule.feature:5)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="And it is set as enabled" classname="Scenario: I want to log in as a valid user and get a response code 200 from the login action" time="0.001" ignored="true"/>
+        <testcase name="When I try to get a token using the oauth login endpoint and using username = &quot;filip&quot; and password &quot;filip&quot; for the application = &quot;cs&quot; with secret = &quot;secret&quot;" classname="Scenario: I want to log in as a valid user and get a response code 200 from the login action" time="0.0" ignored="true"/>
+        <testcase name="Then the oauth token should not be empty" classname="Scenario: I want to log in as a valid user and get a response code 200 from the login action" time="0.003" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

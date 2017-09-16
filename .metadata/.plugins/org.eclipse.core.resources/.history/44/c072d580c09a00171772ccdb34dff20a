@@ -1,0 +1,5 @@
+package com.pilaf.cs.tests.feign;
+
+public interface OauthLogInFeignClient {
+
+}

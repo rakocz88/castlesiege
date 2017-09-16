@@ -1,0 +1,10 @@
+package com.pilaf.cs.tests.feign;
+
+import org.springframework.cloud.netflix.feign.FeignClient;
+import org.springframework.stereotype.Component;
+
+@Component
+@FeignClient(value = "http://users")
+public interface OauthLogInFeignClient {
+
+}

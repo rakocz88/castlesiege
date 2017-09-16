@@ -1,0 +1,5 @@
+package com.pilaf.cs.card;
+
+public class FeignClientConfiguration {
+
+}

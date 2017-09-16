@@ -1,0 +1,72 @@
+package com.pilaf.cs.tests.steps;
+
+import org.junit.After;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.pilaf.cs.tests.SpringIntegrationTest;
+import com.pilaf.cs.tests.builder.UserTest;
+import com.pilaf.cs.tests.feign.CardCreatorFeignClient;
+import com.pilaf.cs.tests.feign.OauthLogInClient;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class UserModuleSteps extends SpringIntegrationTest {
+	
+	
+	@Autowired
+	private CardCreatorFeignClient cardCreatorClient;
+	
+	@Autowired
+	private OauthLogInClient oauthLogInClient;
+	
+	private UserTest userTest;
+	
+	@Given("^I am a user that is not loged in$")
+	public void i_am_a_user_that_is_not_loged_in() throws Throwable {
+		userTest = new UserTest();
+		cardCreatorClient.create();
+		oauthLogInClient.getOauthRequestToken();
+//		System.out.println(externalUserService.getAllUsers());
+	    // Write code here that turns the phrase above into concrete actions
+//	    throw new PendingException();
+	}
+
+	@Given("^there is a account with username =\"(.*?)\" and password = \"(.*?)\" in the database$")
+	public void there_is_a_account_with_username_and_password_in_the_database(String arg1, String arg2) throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+//	    throw new PendingException();
+	}
+
+	@Given("^it is set as enabled$")
+	public void it_is_set_as_enabled() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+//	    throw new PendingException();
+	}
+
+	@When("^I try to get a token using the oauth login endpoint and using username = \"(.*?)\" and password \"(.*?)\" for the application = \"(.*?)\" with secret = \"(.*?)\"$")
+	public void i_try_to_get_a_token_using_the_oauth_login_endpoint_and_using_username_and_password_for_the_application_with_secret(String arg1, String arg2, String arg3, String arg4) throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+//	    throw new PendingException();
+	}
+
+	@Then("^I should get a response code (\\d+)$")
+	public void i_should_get_a_response_code(int arg1) throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+//	    throw new PendingException();
+	}
+
+	@Then("^the oauth token should not be empty$")
+	public void the_oauth_token_should_not_be_empty() throws Throwable {
+//	    // Write code here that turns the phrase above into concrete actions
+//	    throw new PendingException();
+	}
+	
+	@After
+	public void after() throws InterruptedException{
+	}
+
+
+
+}

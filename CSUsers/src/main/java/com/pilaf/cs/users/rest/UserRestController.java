@@ -1,5 +1,6 @@
 package com.pilaf.cs.users.rest;
 
+import java.security.Principal;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.pilaf.cs.users.model.User;
 import com.pilaf.cs.users.service.UserService;
 
-@RestController
+@RestController("/users")
 public class UserRestController {
 
 	private UserService userService;
@@ -22,7 +23,7 @@ public class UserRestController {
 	}
 
 	@RequestMapping("/all")
-	public List<User> getAllUsers() {
+	public List<User> getAllUsers(Principal principal) {
 		return userService.getAllUsers();
 	}
 	

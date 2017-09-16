@@ -1,30 +1,23 @@
 package com.pilaf.cs.card.rest;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
-
-import com.pilaf.cs.card.service.ExternalUserService;
 
 
-@RestController()
+@RestController
 public class UsersRestService {
 
-	private static final String URL = "http://user-service/all";
 	
-	@Autowired
-	RestTemplate restTemplate;
+//	@Autowired
+//	RestTemplate restTemplate;
 	
-	@Autowired
-	private ExternalUserService externalUserService;
+//	@Autowired
+//	private ExternalUserService externalUserService;
 
 	
-	@RequestMapping(produces = MediaType.APPLICATION_JSON_VALUE, name = "/usersf")
-	public String getAllUsersFeign() {
-		return externalUserService.getAllUsers();
-	}
+//	@RequestMapping(produces = MediaType.APPLICATION_JSON_VALUE, name = "/all")
+//	public String getAllUsersFeign() {
+//		return "allCards";
+//	}
 	
 	
 

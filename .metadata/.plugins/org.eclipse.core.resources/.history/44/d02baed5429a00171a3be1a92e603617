@@ -1,0 +1,9 @@
+package com.pilaf.cs.cardcreator;
+
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+public class SomeTest {
+
+}

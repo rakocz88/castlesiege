@@ -8,11 +8,10 @@ eureka:
 # HTTP Server
 server:
   port: 8080   # HTTP (Tomcat) port
-  contextPath: /users
   
 spring:
   application:
-    name: user-service
+    name: users
   datasource:
     url : jdbc:postgresql://localhost:5432/csusers
     username: postgres

@@ -1,2 +1,4 @@
 1505399527378	Delete resource 'CsAuthorization'
 1505399531392	Delete resource 'CSApi'
+1505480918590	Rename resource 'CSIntegrationTests'
+1505552749707	Delete resource 'CSFeignClients'

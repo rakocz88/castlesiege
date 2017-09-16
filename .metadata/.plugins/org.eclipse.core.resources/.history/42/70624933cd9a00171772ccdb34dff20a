@@ -1,0 +1,9 @@
+Feature: User module feature Feature
+
+Scenario: I want to log in as a valid user and get a response code 200 from the login action
+	Given I am a user that is not loged in
+	And there is a account with username ="filip" and password = "filip" in the database
+	And it is set as enabled
+	When I try to get a token using the oauth login endpoint and using username = "filip" and password "filip" for the application = "cs" with secret = "secret"
+	Then the oauth token should not be empty
+	

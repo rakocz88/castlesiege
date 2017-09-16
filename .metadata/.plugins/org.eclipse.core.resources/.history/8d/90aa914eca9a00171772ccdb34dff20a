@@ -1,0 +1,33 @@
+package com.pilaf.cs.tests.builder;
+
+public class UserTest {
+
+	private final String login; // required
+
+	private UserTest(UserTestBuilder builder) {
+		this.login = builder.login;
+	}
+
+	public String getLogin() {
+		return login;
+	}
+
+	public static class UserTestBuilder {
+		private String login;
+
+		public UserTestBuilder() {
+
+		}
+
+		public UserTestBuilder setLogin(String login) {
+			this.login = login;
+			return this;
+		}
+
+		public UserTest build() {
+			return UserTest(this);
+		}
+
+	}
+
+}
