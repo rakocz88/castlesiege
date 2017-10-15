@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="java" project="CsE2ETests" tests="4" started="4" failures="0" errors="2" ignored="1">
+  <testsuite name="com.pilaf.cs.tests.RunBDDTest" time="0.376">
+    <testsuite name="Feature: User module feature Feature" time="0.376">
+      <testsuite name="Scenario: I want to log in and see my user details" time="0.371" incomplete="true">
+        <error>org.springframework.web.client.HttpClientErrorException: 401 null&#13;
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:63)&#13;
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:700)&#13;
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:653)&#13;
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:613)&#13;
+	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:312)&#13;
+	at com.pilaf.cs.tests.steps.UserModuleSteps.i_try_to_use_the_user_by_name_rest_enpoint_with_the_username(UserModuleSteps.java:65)&#13;
+	at ✽.And I try to use the user by name rest enpoint with the username = "filip"(scenario/userModule.feature:11)&#13;
+&#13;
+</error>
+        <testcase name="Given I am a user that is not loged in" classname="Scenario: I want to log in and see my user details" time="0.194"/>
+        <testcase name="When I try to get a token using the oauth login endpoint and using username = &quot;filip&quot; and password &quot;filip&quot;" classname="Scenario: I want to log in and see my user details" time="0.173"/>
+        <testcase name="And I try to use the user by name rest enpoint with the username = &quot;filip&quot;" classname="Scenario: I want to log in and see my user details" time="0.003">
+          <error>org.springframework.web.client.HttpClientErrorException: 401 null&#13;
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:63)&#13;
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:700)&#13;
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:653)&#13;
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:613)&#13;
+	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:312)&#13;
+	at com.pilaf.cs.tests.steps.UserModuleSteps.i_try_to_use_the_user_by_name_rest_enpoint_with_the_username(UserModuleSteps.java:65)&#13;
+	at ✽.And I try to use the user by name rest enpoint with the username = "filip"(scenario/userModule.feature:11)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="Then I should get the use with usename = &quot;filip&quot; and the password should not be null" classname="Scenario: I want to log in and see my user details" time="0.003" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

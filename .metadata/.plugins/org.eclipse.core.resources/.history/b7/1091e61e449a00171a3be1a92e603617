@@ -1,6 +1,0 @@
-package com.pilaf.cs.card;
-
-@Run
-public class SomeTest {
-
-}

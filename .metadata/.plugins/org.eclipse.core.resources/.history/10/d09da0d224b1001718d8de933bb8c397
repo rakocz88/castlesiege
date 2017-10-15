@@ -1,0 +1,25 @@
+package com.pilaf.cs.rest;
+
+import org.apache.commons.collections.map.HashedMap;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
+import org.springframework.util.MultiValueMap;
+import org.springframework.web.client.RestTemplate;
+
+@Component
+public class TestRest {
+	
+	@Autowired
+	private RestTemplate restTemplate = new RestTemplate();
+	
+	public void testGetUser(MultiValueMap<String, String> headers){
+		HttpEntity entity = new HttpEntity(headers);
+		ResponseEntity<String> response = restTemplate.exchange(
+				"http://users/filip", HttpMethod.GET, entity, String.class, new HashedMap());
+	}
+
+}

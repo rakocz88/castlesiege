@@ -1,8 +1,0 @@
-package com.pilaf.cs.cardcreator;
-
-import org.springframework.boot.test.context.SpringBootTest;
-
-@SpringBootTest
-public class SomeTest {
-
-}

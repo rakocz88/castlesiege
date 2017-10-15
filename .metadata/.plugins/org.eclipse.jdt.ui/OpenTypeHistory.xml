@@ -3,4 +3,9 @@
 <typeInfo handle="=CSCardCreator/src\/main\/java&lt;com.pilaf.cs.cardcreator.service{ExternalUserService.java[ExternalUserService" modifiers="513" timestamp="1505234682524"/>
 <typeInfo handle="=CSUsers/src\/main\/java&lt;com.pilaf.cs.users.service{UserService.java[UserService" modifiers="1" timestamp="1505235238919"/>
 <typeInfo handle="=CSUsers/C:\/Users\/filip\/.m2\/repository\/org\/springframework\/boot\/spring-boot-test\/1.5.6.RELEASE\/spring-boot-test-1.5.6.RELEASE.jar&lt;org.springframework.boot.test.context(SpringBootTestContextBootstrapper.class[SpringBootTestContextBootstrapper" modifiers="33" timestamp="1504450485824"/>
+<typeInfo handle="=CSUsers/C:\/Users\/filip\/.m2\/repository\/org\/springframework\/security\/oauth\/spring-security-oauth2\/2.0.14.RELEASE\/spring-security-oauth2-2.0.14.RELEASE.jar&lt;org.springframework.security.oauth2.provider.authentication(OAuth2AuthenticationProcessingFilter.class[OAuth2AuthenticationProcessingFilter" modifiers="33" timestamp="1504450490289"/>
+<typeInfo handle="=CSEureka/C:\/Users\/filip\/.m2\/repository\/org\/springframework\/spring-web\/4.1.6.RELEASE\/spring-web-4.1.6.RELEASE.jar&lt;org.springframework.web.filter(RequestContextFilter.class[RequestContextFilter" modifiers="33" timestamp="1504450476114"/>
+<typeInfo handle="=CSCard/C:\/Users\/filip\/.m2\/repository\/org\/springframework\/spring-web\/4.3.10.RELEASE\/spring-web-4.3.10.RELEASE.jar&lt;org.springframework.web.filter(RequestContextFilter.class[RequestContextFilter" modifiers="33" timestamp="1504450484107"/>
+<typeInfo handle="=CSCard/C:\/Users\/filip\/.m2\/repository\/com\/netflix\/eureka\/eureka-client\/1.6.2\/eureka-client-1.6.2.jar&lt;com.netflix.discovery.provider(DiscoveryJerseyProvider.class[DiscoveryJerseyProvider" modifiers="33" timestamp="1504450491625"/>
+<typeInfo handle="=CsE2ETests/src\/test\/java&lt;com.pilaf.cs.tests.steps{UserModuleSteps.java[UserModuleSteps" modifiers="1" timestamp="1507999882802"/>
 </typeInfoHistroy>

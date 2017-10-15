@@ -1,0 +1,68 @@
+package com.pilaf.cs.tests.steps;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.isEmptyOrNullString;
+import static org.hamcrest.Matchers.not;
+
+import org.junit.Before;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.MultiValueMap;
+import org.springframework.web.client.RestTemplate;
+
+import com.pilaf.cs.tests.SpringIntegrationTest;
+import com.pilaf.cs.tests.builder.UserTest;
+import com.pilaf.cs.tests.feign.OauthLogInClient;
+import com.pilaf.cs.tests.feign.UserFeignClient;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;;
+
+public class UserModuleSteps extends SpringIntegrationTest {
+
+	@Autowired
+	private OauthLogInClient oauthLogInClient;
+
+	@Autowired
+	private UserFeignClient userClient;
+	
+	RestTemplate restTemplate = new RestTemplate();
+
+	@Before
+	public void resetAllData() {
+		System.out.println("RESET DATA");
+		UserTest.resetData();
+		// userTest = UserTest.getInstance();
+	}
+
+	@Given("^I am a user that is not loged in$")
+	public void i_am_a_user_that_is_not_loged_in() throws Throwable {
+	}
+
+	@When("^I try to get a token using the oauth login endpoint and using username = \"([^\"]*)\" and password \"([^\"]*)\"$")
+	public void i_try_to_get_a_token_using_the_oauth_login_endpoint_and_using_username_and_password(String user,
+			String password) throws Throwable {
+		String token = oauthLogInClient.getOauthRequestToken(user, password);
+		UserTest.getInstance().setAuthorizationToken(token);
+	}
+
+	@Then("^the oauth token should not be empty$")
+	public void the_oauth_token_should_not_be_empty() throws Throwable {
+		assertThat(UserTest.getInstance().getAuthorizationToken(), is(not(isEmptyOrNullString())));
+	}
+
+	@When("^I try to use the user by name rest enpoint with the username = \"([^\"]*)\"$")
+	public void i_try_to_use_the_user_by_name_rest_enpoint_with_the_username(String username) throws Throwable {
+		MultiValueMap<String, String> multiValueMap = UserModuleTestUtils.getHeaders(UserTest.getInstance());
+		RestTemplate
+		UserTest.getInstance().setReturnedUser(userClient.getUserByName(multiValueMap, username));
+	}
+
+	@Then("^I should get the use with usename = \"([^\"]*)\" and the password should not be null$")
+	public void i_should_get_the_use_with_usename_and_the_password_should_not_be_null(String username)
+			throws Throwable {
+		assertThat(UserTest.getInstance().getReturnedUser(), is(not(isEmptyOrNullString())));
+	}
+
+}

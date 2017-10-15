@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;WebSecurityConfig.java&apos; to &apos;CsE2ETests/src/main/java/com.pilaf.cs.config&apos;&#x0D;&#x0A;- Original project: &apos;CSUsers&apos;&#x0D;&#x0A;- Destination element: &apos;CsE2ETests/src/main/java/com.pilaf.cs.config&apos;&#x0D;&#x0A;- Original element: &apos;com.pilaf.cs.users.config.WebSecurityConfig.java&apos;" description="Copy compilation unit" destination="=CsE2ETests/src\/main\/java&lt;com.pilaf.cs.config" element1="/src\/main\/java&lt;com.pilaf.cs.users.config{WebSecurityConfig.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1508058142310" units="1" version="1.0"/>
+</session>

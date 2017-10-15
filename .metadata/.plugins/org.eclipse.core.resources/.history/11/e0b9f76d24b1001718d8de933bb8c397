@@ -1,0 +1,17 @@
+package com.pilaf.cs.rest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.web.client.RestTemplate;
+
+@Component
+public class TestRest {
+	
+	@Autowired
+	private RestTemplate restTemplate = new RestTemplate();
+	
+	public void testGetUser(){
+		restTemplate.getForEntity("http://users/filip", String.class);
+	}
+
+}

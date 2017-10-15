@@ -1,5 +1,0 @@
-package com.pilaf.cs.card.service;
-
-public class CardCreatorFeignClient {
-
-}

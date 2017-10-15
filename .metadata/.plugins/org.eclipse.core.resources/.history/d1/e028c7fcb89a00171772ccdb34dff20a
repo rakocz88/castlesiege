@@ -1,5 +1,0 @@
-package com.pilaf.cs.faign.clients.user;
-
-public interface CSUserFeignClient {
-
-}

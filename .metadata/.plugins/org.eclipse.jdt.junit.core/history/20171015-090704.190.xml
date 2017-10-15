@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="java" project="CsE2ETests" tests="4" started="4" failures="0" errors="2" ignored="1">
+  <testsuite name="com.pilaf.cs.tests.RunBDDTest" time="8.422">
+    <testsuite name="Feature: User module feature Feature" time="8.422">
+      <testsuite name="Scenario: I want to log in and see my user details" time="8.415" incomplete="true">
+        <error>org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://users/filip": users; nested exception is java.net.UnknownHostException: users&#13;
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:666)&#13;
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:613)&#13;
+	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:312)&#13;
+	at com.pilaf.cs.tests.steps.UserModuleSteps.i_try_to_use_the_user_by_name_rest_enpoint_with_the_username(UserModuleSteps.java:65)&#13;
+	at ✽.And I try to use the user by name rest enpoint with the username = "filip"(scenario/userModule.feature:11)&#13;
+Caused by: java.net.UnknownHostException: users&#13;
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)&#13;
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)&#13;
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)&#13;
+	at java.net.Socket.connect(Socket.java:589)&#13;
+	at java.net.Socket.connect(Socket.java:538)&#13;
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)&#13;
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)&#13;
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)&#13;
+	at sun.net.www.http.HttpClient.&lt;init&gt;(HttpClient.java:211)&#13;
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)&#13;
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)&#13;
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1169)&#13;
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1105)&#13;
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999)&#13;
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:933)&#13;
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:78)&#13;
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)&#13;
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)&#13;
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:99)&#13;
+	at org.springframework.http.client.support.BasicAuthorizationInterceptor.intercept(BasicAuthorizationInterceptor.java:63)&#13;
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:86)&#13;
+	at org.springframework.cloud.netflix.metrics.MetricsClientHttpRequestInterceptor.intercept(MetricsClientHttpRequestInterceptor.java:64)&#13;
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:86)&#13;
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:70)&#13;
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)&#13;
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)&#13;
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:652)&#13;
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:613)&#13;
+	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:312)&#13;
+	at com.pilaf.cs.tests.steps.UserModuleSteps.i_try_to_use_the_user_by_name_rest_enpoint_with_the_username(UserModuleSteps.java:65)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:497)&#13;
+	at cucumber.runtime.Utils$1.call(Utils.java:37)&#13;
+	at cucumber.runtime.Timeout.timeout(Timeout.java:13)&#13;
+	at cucumber.runtime.Utils.invoke(Utils.java:31)&#13;
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)&#13;
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)&#13;
+	at cucumber.runtime.Runtime.runStep(Runtime.java:299)&#13;
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:98)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</error>
+        <testcase name="Given I am a user that is not loged in" classname="Scenario: I want to log in and see my user details" time="1.34"/>
+        <testcase name="When I try to get a token using the oauth login endpoint and using username = &quot;filip&quot; and password &quot;filip&quot;" classname="Scenario: I want to log in and see my user details" time="7.068"/>
+        <testcase name="And I try to use the user by name rest enpoint with the username = &quot;filip&quot;" classname="Scenario: I want to log in and see my user details" time="0.006">
+          <error>org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://users/filip": users; nested exception is java.net.UnknownHostException: users&#13;
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:666)&#13;
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:613)&#13;
+	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:312)&#13;
+	at com.pilaf.cs.tests.steps.UserModuleSteps.i_try_to_use_the_user_by_name_rest_enpoint_with_the_username(UserModuleSteps.java:65)&#13;
+	at ✽.And I try to use the user by name rest enpoint with the username = "filip"(scenario/userModule.feature:11)&#13;
+Caused by: java.net.UnknownHostException: users&#13;
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)&#13;
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)&#13;
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)&#13;
+	at java.net.Socket.connect(Socket.java:589)&#13;
+	at java.net.Socket.connect(Socket.java:538)&#13;
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)&#13;
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)&#13;
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)&#13;
+	at sun.net.www.http.HttpClient.&lt;init&gt;(HttpClient.java:211)&#13;
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)&#13;
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)&#13;
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1169)&#13;
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1105)&#13;
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999)&#13;
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:933)&#13;
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:78)&#13;
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)&#13;
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)&#13;
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:99)&#13;
+	at org.springframework.http.client.support.BasicAuthorizationInterceptor.intercept(BasicAuthorizationInterceptor.java:63)&#13;
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:86)&#13;
+	at org.springframework.cloud.netflix.metrics.MetricsClientHttpRequestInterceptor.intercept(MetricsClientHttpRequestInterceptor.java:64)&#13;
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:86)&#13;
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:70)&#13;
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)&#13;
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)&#13;
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:652)&#13;
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:613)&#13;
+	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:312)&#13;
+	at com.pilaf.cs.tests.steps.UserModuleSteps.i_try_to_use_the_user_by_name_rest_enpoint_with_the_username(UserModuleSteps.java:65)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:497)&#13;
+	at cucumber.runtime.Utils$1.call(Utils.java:37)&#13;
+	at cucumber.runtime.Timeout.timeout(Timeout.java:13)&#13;
+	at cucumber.runtime.Utils.invoke(Utils.java:31)&#13;
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)&#13;
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)&#13;
+	at cucumber.runtime.Runtime.runStep(Runtime.java:299)&#13;
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:98)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="Then I should get the use with usename = &quot;filip&quot; and the password should not be null" classname="Scenario: I want to log in and see my user details" time="0.007" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

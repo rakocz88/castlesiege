@@ -1,5 +1,0 @@
-package com.pilaf.cs.feign.clients;
-
-public interface CSCardCreatorFeignClient {
-
-}

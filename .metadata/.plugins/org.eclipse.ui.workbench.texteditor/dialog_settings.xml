@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="test" key="selection"/>
+		<item value="authentication" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="true" key="wholeword"/>
 		<list key="findhistory">
-			<item value="test"/>
-			<item value="UserModuleSteps"/>
-			<item value="httpb"/>
-			<item value="accessToken"/>
-			<item value="OAuth2RestOperations"/>
-			<item value="username"/>
-			<item value="hib"/>
-			<item value="eureka"/>
+			<item value="authentication"/>
+			<item value="tarter-web"/>
+			<item value="starter-feign"/>
+			<item value="starter-eureka"/>
+			<item value="security-oauth2"/>
+			<item value="starter-security"/>
+			<item value="tarter-actuator"/>
+			<item value="tarter-security"/>
 		</list>
 		<list key="replacehistory">
 		</list>
